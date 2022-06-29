@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottom_nav"
+    app:startDestination="@id/anasayfaFragment">
+
+    <fragment
+        android:id="@+id/anasayfaFragment"
+        android:name="com.example.primevideo.AnasayfaFragment"
+        android:label="fragment_anasayfa"
+        tools:layout="@layout/fragment_anasayfa" />
+    <fragment
+        android:id="@+id/bulFragment"
+        android:name="com.example.primevideo.BulFragment"
+        android:label="fragment_bul"
+        tools:layout="@layout/fragment_bul" />
+    <fragment
+        android:id="@+id/indirilenlerFragment"
+        android:name="com.example.primevideo.IndirilenlerFragment"
+        android:label="fragment_indirilenler"
+        tools:layout="@layout/fragment_indirilenler" />
+    <fragment
+        android:id="@+id/banaOzelFragment"
+        android:name="com.example.primevideo.BanaOzelFragment"
+        android:label="fragment_bana_ozel"
+        tools:layout="@layout/fragment_bana_ozel" />
+</navigation>

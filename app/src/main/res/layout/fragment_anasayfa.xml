@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/arka_plan"
+    tools:context=".AnasayfaFragment">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Anasayfa"
+        android:textColor="@color/beyaz"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageViewLogo"
+        android:layout_width="80dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/logo_icon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageViewLogo"
+        app:tabBackground="@color/arka_plan"
+        app:tabIndicatorColor="@color/white"
+        app:tabTextAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:tabTextColor="@color/white">
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Anasayfa" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TV Dizileri" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Filmler" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tabItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Çocuk" />
+    </com.google.android.material.tabs.TabLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
