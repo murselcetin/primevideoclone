@@ -7,6 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
+import androidx.recyclerview.widget.StaggeredGridLayoutManager
 import androidx.viewpager2.widget.ViewPager2
 import com.example.primevideo.databinding.FragmentAnasayfaBinding
 
@@ -53,6 +54,29 @@ class AnasayfaFragment : Fragment() {
                 changeColor()
             }
         })
+
+        binding.rv.layoutManager =
+            StaggeredGridLayoutManager(1, StaggeredGridLayoutManager.HORIZONTAL)
+
+        binding.rv2.layoutManager =
+            StaggeredGridLayoutManager(1, StaggeredGridLayoutManager.HORIZONTAL)
+
+        val filmlerListesi = ArrayList<Filmler>()
+        val f1 = Filmler(1, "The Terminal List", "terminallist")
+        val f2 = Filmler(2, "The Boyz", "theboys")
+        val f3 = Filmler(3, "Bang Bang Baby", "bangbang")
+        val f4 = Filmler(4, "The Summer I Turned Pretty", "thesummer")
+        filmlerListesi.add(f1)
+        filmlerListesi.add(f2)
+        filmlerListesi.add(f3)
+        filmlerListesi.add(f4)
+
+        val AmazonOrijinalAdapter = AmazonOrijinalAdapter(requireContext(), filmlerListesi)
+        binding.rv.adapter = AmazonOrijinalAdapter
+
+        val SeslendirmeAdapter = AmazonOrijinalAdapter(requireContext(), filmlerListesi)
+        binding.rv2.adapter = SeslendirmeAdapter
+
         return binding.root
     }
 
