@@ -10,5 +10,6 @@
 
     <color name="acik_mavi">#79b8f3</color>
     <color name="beyaz">#fff</color>
+    <color name="gri">#4C4D4E</color>
     <color name="arka_plan">#0f171e</color>
 </resources>

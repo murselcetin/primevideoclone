@@ -71,10 +71,20 @@ class AnasayfaFragment : Fragment() {
         filmlerListesi.add(f3)
         filmlerListesi.add(f4)
 
+        val filmlerListesi2 = ArrayList<Filmler>()
+        val fl1 = Filmler(1, "Dayı", "dayi")
+        val fl2 = Filmler(2, "Sıfır Bir", "sifirbir")
+        val fl3 = Filmler(3, "Hızlı ve Öfkeli 7", "hizliveofkeli")
+        val fl4 = Filmler(4, "Fight Club", "fightclub")
+        filmlerListesi2.add(fl1)
+        filmlerListesi2.add(fl2)
+        filmlerListesi2.add(fl3)
+        filmlerListesi2.add(fl4)
+
         val AmazonOrijinalAdapter = AmazonOrijinalAdapter(requireContext(), filmlerListesi)
         binding.rv.adapter = AmazonOrijinalAdapter
 
-        val SeslendirmeAdapter = AmazonOrijinalAdapter(requireContext(), filmlerListesi)
+        val SeslendirmeAdapter = AmazonOrijinalAdapter(requireContext(), filmlerListesi2)
         binding.rv2.adapter = SeslendirmeAdapter
 
         return binding.root
@@ -83,19 +93,19 @@ class AnasayfaFragment : Fragment() {
     fun changeColor(){
         when(viewPager.currentItem){
             0->{
-                iv1.setBackgroundColor(resources.getColor(R.color.acik_mavi))
-                iv2.setBackgroundColor(resources.getColor(R.color.white))
-                iv3.setBackgroundColor(resources.getColor(R.color.white))
+                iv1.setBackgroundColor(resources.getColor(R.color.white))
+                iv2.setBackgroundColor(resources.getColor(R.color.gri))
+                iv3.setBackgroundColor(resources.getColor(R.color.gri))
             }
             1->{
-                iv1.setBackgroundColor(resources.getColor(R.color.white))
-                iv2.setBackgroundColor(resources.getColor(R.color.acik_mavi))
-                iv3.setBackgroundColor(resources.getColor(R.color.white))
+                iv1.setBackgroundColor(resources.getColor(R.color.gri))
+                iv2.setBackgroundColor(resources.getColor(R.color.white))
+                iv3.setBackgroundColor(resources.getColor(R.color.gri))
             }
             2->{
-                iv1.setBackgroundColor(resources.getColor(R.color.white))
-                iv2.setBackgroundColor(resources.getColor(R.color.white))
-                iv3.setBackgroundColor(resources.getColor(R.color.acik_mavi))
+                iv1.setBackgroundColor(resources.getColor(R.color.gri))
+                iv2.setBackgroundColor(resources.getColor(R.color.gri))
+                iv3.setBackgroundColor(resources.getColor(R.color.white))
             }
         }
     }
