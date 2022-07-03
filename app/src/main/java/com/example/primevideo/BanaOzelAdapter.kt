@@ -28,6 +28,8 @@ class BanaOzelAdapter(var mContext: Context, var filmlerListesi: List<Filmler>) 
         val t = holder.tasarim
 
         t.textViewFilmAdi.text = film.filmAdi
+        t.textViewFilmSure.text = "${film.filmSure} dk"
+        t.textViewFilmYil.text = film.filmYil.toString()
 
         t.ImageViewFilm.setImageResource(
             mContext.resources.getIdentifier(

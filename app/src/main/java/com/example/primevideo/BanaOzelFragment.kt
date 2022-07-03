@@ -23,10 +23,10 @@ class BanaOzelFragment : Fragment() {
 
 
         val filmlerListesi = ArrayList<Filmler>()
-        val f1 = Filmler(1, "The Terminal List", "terminallist")
-        val f2 = Filmler(2, "The Boyz", "theboys")
-        val f3 = Filmler(3, "Bang Bang Baby", "bangbang")
-        val f4 = Filmler(4, "Fight Club", "fightclub")
+        val f1 = Filmler(1, "The Terminal List", "terminallist",2020,152)
+        val f2 = Filmler(2, "The Boyz", "theboys",2021,120)
+        val f3 = Filmler(3, "Bang Bang Baby", "bangbang",2022,134)
+        val f4 = Filmler(4, "Fight Club", "fightclub",1999,139)
         filmlerListesi.add(f1)
         filmlerListesi.add(f2)
         filmlerListesi.add(f3)

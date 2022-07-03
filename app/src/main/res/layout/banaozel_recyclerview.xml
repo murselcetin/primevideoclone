@@ -24,7 +24,17 @@
                 app:layout_constraintBottom_toBottomOf="@id/cl"
                 app:layout_constraintStart_toStartOf="@id/cl"
                 app:layout_constraintTop_toTopOf="@id/cl"
-                app:srcCompat="@drawable/dayi" />
+                app:srcCompat="@drawable/dayi" >
+            </ImageView>
+            <ImageView
+                android:id="@+id/ImageViewPlay"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                app:srcCompat="@drawable/play"
+                app:layout_constraintStart_toStartOf="@id/cl"
+                app:layout_constraintBottom_toBottomOf="@id/cl"
+                android:layout_margin="15dp"
+                />
 
             <TextView
                 android:id="@+id/textViewFilmAdi"
