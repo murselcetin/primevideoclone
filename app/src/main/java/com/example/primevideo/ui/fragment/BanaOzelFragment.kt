@@ -1,4 +1,4 @@
-package com.example.primevideo
+package com.example.primevideo.ui.fragment
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -6,9 +6,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.StaggeredGridLayoutManager
-import com.example.primevideo.databinding.BanaozelRecyclerviewBinding
+import com.example.primevideo.data.entity.Filmler
 import com.example.primevideo.databinding.FragmentBanaOzelBinding
+import com.example.primevideo.ui.adapter.BanaOzelAdapter
 
 class BanaOzelFragment : Fragment() {
     private lateinit var binding: FragmentBanaOzelBinding

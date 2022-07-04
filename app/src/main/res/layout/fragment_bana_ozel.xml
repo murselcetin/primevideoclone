@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/arka_plan"
-    tools:context=".BanaOzelFragment">
+    tools:context=".ui.fragment.BanaOzelFragment">
 
     <ImageView
         android:id="@+id/imageViewUser"
