@@ -15,6 +15,6 @@
         android:title="İndirilenler" />
     <item
         android:id="@+id/banaOzelFragment"
-        android:icon="@drawable/adult"
+        android:icon="@drawable/user"
         android:title="Bana Özel" />
 </menu>

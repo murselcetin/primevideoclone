@@ -1,4 +1,4 @@
-package com.example.primevideo
+package com.example.primevideo.data.entity
 
 import java.io.Serializable
 

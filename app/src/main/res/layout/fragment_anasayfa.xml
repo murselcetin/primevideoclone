@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/arka_plan"
-    tools:context=".AnasayfaFragment">
+    tools:context=".ui.fragment.AnasayfaFragment">
 
     <ImageView
         android:id="@+id/imageViewLogo"

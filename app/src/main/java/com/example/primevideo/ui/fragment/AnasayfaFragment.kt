@@ -1,6 +1,5 @@
-package com.example.primevideo
+package com.example.primevideo.ui.fragment
 
-import android.media.Image
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -9,7 +8,11 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import androidx.recyclerview.widget.StaggeredGridLayoutManager
 import androidx.viewpager2.widget.ViewPager2
+import com.example.primevideo.R
+import com.example.primevideo.data.entity.Filmler
 import com.example.primevideo.databinding.FragmentAnasayfaBinding
+import com.example.primevideo.ui.adapter.AmazonOrijinalAdapter
+import com.example.primevideo.ui.adapter.ViewPagerAdapter
 
 
 class AnasayfaFragment : Fragment() {
@@ -31,7 +34,7 @@ class AnasayfaFragment : Fragment() {
         iv2 = binding.iv2
         iv3 = binding.iv3
 
-        val images= listOf(R.drawable.viewpager1,R.drawable.viewpager2,R.drawable.viewpager3)
+        val images= listOf(R.drawable.viewpager1, R.drawable.viewpager2, R.drawable.viewpager3)
         val adapter = ViewPagerAdapter(images)
         viewPager.adapter = adapter
 

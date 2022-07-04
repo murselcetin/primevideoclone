@@ -1,17 +1,16 @@
-package com.example.primevideo
+package com.example.primevideo.ui.adapter
 
 import android.content.Context
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.example.primevideo.databinding.BanaozelRecyclerviewBinding
+import com.example.primevideo.data.entity.Filmler
+import com.example.primevideo.databinding.FilmRecyclerviewBinding
 
-class BanaOzelAdapter(var mContext: Context, var filmlerListesi: List<Filmler>) :
-    RecyclerView.Adapter<BanaOzelAdapter.cardDesign>() {
-    inner class cardDesign(tasarim: BanaozelRecyclerviewBinding) :
+class AmazonOrijinalAdapter (var mContext: Context,var filmlerListesi: List<Filmler>) : RecyclerView.Adapter<AmazonOrijinalAdapter.cardDesign>() {
+    inner class cardDesign(tasarim: FilmRecyclerviewBinding) :
         RecyclerView.ViewHolder(tasarim.root) {
-        var tasarim: BanaozelRecyclerviewBinding
-
+        var tasarim: FilmRecyclerviewBinding
         init {
             this.tasarim = tasarim
         }
@@ -19,7 +18,7 @@ class BanaOzelAdapter(var mContext: Context, var filmlerListesi: List<Filmler>) 
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): cardDesign {
         val layoutInflater = LayoutInflater.from(mContext)
-        val tasarim = BanaozelRecyclerviewBinding.inflate(layoutInflater, parent, false)
+        val tasarim = FilmRecyclerviewBinding.inflate(layoutInflater, parent, false)
         return cardDesign(tasarim)
     }
 
@@ -27,11 +26,7 @@ class BanaOzelAdapter(var mContext: Context, var filmlerListesi: List<Filmler>) 
         val film = filmlerListesi[position]
         val t = holder.tasarim
 
-        t.textViewFilmAdi.text = film.filmAdi
-        t.textViewFilmSure.text = "${film.filmSure} dk"
-        t.textViewFilmYil.text = film.filmYil.toString()
-
-        t.ImageViewFilm.setImageResource(
+        t.imageViewResim.setImageResource(
             mContext.resources.getIdentifier(
                 film.filmResimAdi,
                 "drawable",
